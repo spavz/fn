@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class AggreDiscre {
+	
+	ArrayList<Integer> col;
+
+	AggreDiscre(int n){
+		col = new ArrayList<>(n);
+	
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Demo {
+	
+	static Scanner in = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter N");
+		int N = in.nextInt();
+		System.out.println("Enter no col");
+		int nCol = in.nextInt();
+		
+		AggreDiscre[] table = new AggreDiscre[nCol];
+		for(int i=0;i<table.length;i++)
+			table[i] = new AggreDiscre(N);
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(new File("data.dat")));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}
